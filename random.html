@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randon Number</title>
+</head>
+<body>
+    <h1> Random Javascript </h1>
+    <p>Want to return the nuber between 0 to 9</p>
+    <p id="numberShow"></p>
+
+    <script>
+        // document.getElementById("numberShow").innerHTML = Math.floor(Math.random()*10);
+        const getRandomNumber = (min,max) => {
+            return Math.random() * (max - min) + min
+        }
+        let x = getRandomNumber(1,9);
+        document.getElementById('numberShow').innerHTML = x;
+    </script>
+</body>
+</html>
